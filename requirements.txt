@@ -1,4 +1,5 @@
 flask
+gunicorn
+playwright
 flask-cors
 pandas
-playwright
