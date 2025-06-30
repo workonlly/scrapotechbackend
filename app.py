@@ -5,7 +5,8 @@ from werkzeug.utils import secure_filename
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)  # Allow requests from any origin (frontend on Vercel)
+CORS(app, origins=["https://www.scrapotech.com"])
+
 
 UPLOAD_FOLDER = 'uploads'
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
